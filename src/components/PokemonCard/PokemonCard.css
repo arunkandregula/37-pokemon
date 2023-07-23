@@ -1,0 +1,20 @@
+.PokemonCard {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 400px;
+  margin: 20px 50px;
+  background: linear-gradient(to right,white ,gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.PokemonCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 50%;
+}
