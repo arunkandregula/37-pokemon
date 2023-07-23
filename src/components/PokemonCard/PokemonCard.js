@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom';
 import './PokemonCard.css';
 
 const PokemonCard = React.memo(({value}) => {
-  debugger;
   const {data} = value;
   return <div className="PokemonCard">
     <Link to={`/pokemon/${data.id}`}><h4>{data.name}</h4></Link>
