@@ -2,15 +2,10 @@ import React, {useContext} from 'react';
 import {PokemonContext} from '../../context/PokemonContext';
 import {useParams, Link} from 'react-router-dom';
 
-const colors = {
-  'grass': 'green',
-  'poison': 'red'
-}
 const PokemonDetails = () => {
   const {getPokemonByID} = useContext(PokemonContext);
   const {id} = useParams();
   const pokemon = getPokemonByID(id).data;
-  debugger;
   return !pokemon ? 'Pokemon not found' : <div className="PokemonDetails">
     <section>
       <nav><Link to="/">Go Back</Link></nav>
